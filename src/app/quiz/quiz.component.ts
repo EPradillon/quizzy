@@ -21,15 +21,15 @@ export class QuizComponent implements OnInit {
   constructor(private myService: QuestionService, private timer: TimerComponent) { }
 
   ngOnInit() {
-    this.myService.retrieveData().subscribe(
-      (question: Question[]) => console.log(question)
-      )
+    console.log(this.myService.test())
   }
 
   /**
    * laucnh a game
    */
   newGame() {
+
+    // suffle(lespropositions)
 
   }
 

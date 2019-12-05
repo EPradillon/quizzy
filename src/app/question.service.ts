@@ -18,13 +18,17 @@ export class QuestionService {
     return this.http.get<Question[]>(`${environment.backRoot}/questions`)
   }
 
-  
+  test() {
+    this.retrieveData().subscribe(
+      (question: Question[])=> {return this.setOfQuestion(question) }      
+    )
+  }
 
   /**
    * Cut a set number of question
    */
-  private setOfQuestion() {
-    return this.questions.slice(0, this.nbQuestions)
+  private setOfQuestion(a: any[]) {
+    return a.slice(0, this.nbQuestions)
   }
 
   private shuffle(a: any[]): any[] {

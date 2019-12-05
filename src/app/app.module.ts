@@ -7,13 +7,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { QuizComponent } from './quiz/quiz.component';
 import { AppRoutingModule } from './app-routing.module';
 import {MatButtonModule} from '@angular/material/button';
-import { TimerComponent } from './timer/timer.component'; 
+import { TimerComponent } from './timer/timer.component';
+import { ScoreComponent } from './score/score.component'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     QuizComponent,
-    TimerComponent
+    TimerComponent,
+    ScoreComponent
   ],
   imports: [
     BrowserModule,
